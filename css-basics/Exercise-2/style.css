@@ -1,0 +1,17 @@
+.n1, .n3, .n5{
+	background-color: #ff6699;
+	font-family: Verdana, DejaVu sans, sans-serif;
+
+}
+#n2{
+	color: blue;
+	font-size: 36px;
+}
+.n3{
+	font-size: 24px;
+}
+#n4{
+    background-color: green;
+    font-weight: bold;
+    font-size: 24px;
+}

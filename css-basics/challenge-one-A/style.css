@@ -1,0 +1,33 @@
+body{
+	background-color: #FF9F45;
+}
+h1{
+	margin: auto;
+	border-bottom-style: dotted;
+	padding: 0px;
+	text-align: center;
+	font-family: 'BhuTuka Expanded One', cursive;
+	font-weight: bold;
+
+}
+#wrap{
+	width: 800px;
+	margin: auto;
+	background-color:#FFD365 ;
+	padding: 0px;
+	width: 800px;
+	border-style: dotted;
+}
+ul{
+	text-align: center;
+	list-style-type: none;
+	text-transform: capitalize;
+	font-family: 'BhuTuka Expanded One', cursive;
+}
+span{
+	font-size: 30px;
+     
+}
+p{
+	text-align: center;
+}

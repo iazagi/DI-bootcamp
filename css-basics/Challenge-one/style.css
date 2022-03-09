@@ -1,0 +1,14 @@
+#wrap{
+	background-color:#2FA4FF ;
+	padding: 20px 10px;
+	width: 800px;
+}
+ul{
+	text-align: center;
+	list-style-type: none;
+	text-transform: capitalize;
+}
+span{
+	font-size: 30px;
+     
+}

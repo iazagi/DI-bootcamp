@@ -1,0 +1,26 @@
+body{
+	text-align: center;
+}
+div,footer{
+	display: inline-block;
+	border: solid black 3px;
+}
+footer{
+	width: 91.5%;
+	height: 100px;
+	background: #D18CE0;
+}
+div{
+	width: 30%;
+	height: 500px;
+
+}
+.box1{
+	background-color: #E83A14;
+}
+.box2{
+	background-color: #357C3C;
+}
+.box3{
+	background-color: #FFC300;
+}

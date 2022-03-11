@@ -1,0 +1,26 @@
+body{
+	text-align: center;
+	background-color: #0E185F;
+}
+#nav{
+	width: 150px;
+	height: 415px;
+	display: inline-table;
+	background-color: #2FA4FF;
+	margin: 0px;
+	vertical-align: top;
+}
+#content{
+	width: 400px;
+	float: center;
+	display: inline-table;
+	background-color: #00FFDD;
+	margin: 0px;
+
+}
+.copyright{
+	background-color:#0E185F ;
+}
+div{
+	margin: 0px;
+}

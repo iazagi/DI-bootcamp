@@ -1,0 +1,29 @@
+body{
+	width: 100%;
+	text-align: center;
+
+}
+.box{
+	margin: 10px 10px;
+}
+div,footer{
+	display: inline-block;
+	height: 100px;
+}
+.smallContiner{
+	width:95%;
+	margin: 10px;
+	background-color: #F68989;
+	border: solid black 3px;
+}
+.largeContiner{
+	width: 500px;
+	margin: 10px;
+	background-color: #0E3EDA;
+	border: solid black 3px;
+}
+footer{
+	width: 730px;
+	background-color: yellow;
+	border: solid black 3px;
+}

@@ -1,0 +1,26 @@
+footer{
+	width: 99%;
+	height: 100px;
+	background-color: pink;
+}
+img{
+	width: 32.5%;
+	height: 200px;
+}
+div{
+	width: 32.5%;
+	height: 200px;
+}
+footer,img,div{
+	border: solid black 3px;
+	display: inline-block;
+}
+.left{
+	background-color:red ;
+}
+.center{
+	background-color:blue ;
+}
+.rigth{
+	background-color:green ;
+}

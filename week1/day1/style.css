@@ -1,0 +1,59 @@
+body{
+	margin: 0;
+}
+*{
+	margin: 0;
+	padding-bottom:10px 10px;
+
+}
+header{
+	font-size: 2em;
+	text-align: center;
+	font-family: 'Bad Script', cursive;
+	background-color: #E5E3C9;
+}
+.first-cont{
+	background-color: #B4CFB0;
+	padding-top: 50px;
+}
+h3{
+	text-decoration: underline;
+}
+
+
+img{
+	width: 800px;
+	height: 500px;
+}
+.image, .title-media{
+	text-align: center;
+}
+.History{
+	margin-left: 70px;
+}
+
+
+
+
+
+.second-cont{
+	background-color:#94B49F ;
+	text-align: center;
+}
+.title-difference{
+	text-align: center;
+	border: 3px solid;
+	border-color: red;
+}
+.liontext{
+	width: 700px;
+}
+table tr td{
+	border: 3px solid black;
+	text-align: center;
+	padding: 10px 90px;
+}
+table{
+	text-align: center;
+	justify-content: center;
+}

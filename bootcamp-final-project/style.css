@@ -1,0 +1,24 @@
+body{
+	background-color: #254521;
+	margin: 0
+
+}
+.mother{
+	display: inline;
+}
+.left-cont{
+	background-color: skyblue;
+	width: 50%;
+	height:1000px;
+	float: left;
+
+}
+.rigth-cont{
+	background-color: deeppink;
+	width: 50%;
+	height: 1000px;
+	float: right;
+
+
+
+}

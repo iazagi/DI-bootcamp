@@ -1,0 +1,32 @@
+section{
+	border: 3px solid red;
+	width: 100%;
+	height: 500px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding: 4px;
+}
+div{
+	background-color: lightblue;
+	margin: 3px auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+
+
+}
+.number1, .number3{
+	width: 70%;
+	height: 30%;
+}
+.number2{
+	width: 100%;
+	height: 30%;
+}
+h1{
+	font-size: 2em;
+	color: red;
+	
+}

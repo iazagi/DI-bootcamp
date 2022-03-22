@@ -1,0 +1,86 @@
+// say hello to the dvp 5 times
+
+// console.log("hello");
+// console.log("hello");
+// console.log("hello");
+// console.log("hello");
+// console.log("hello");
+
+// let num = 2;
+// num = num + 1;
+// num += 1;
+// num ++
+
+// run 5 times
+for (let counter = 1; counter <= 5 ; counter ++) {
+	console.log("hello");
+	console.log(`The value of counter is ${counter}`);
+}
+
+// // run 4 times
+for (let counter = 1; counter < 5 ; counter ++) {
+	console.log("hello");
+	console.log(`The value of counter is ${counter}`);
+}
+
+// // run 6 times
+for (let counter = 0; counter <= 5 ; counter ++) {
+	console.log("hello");
+	console.log(`The value of counter is ${counter}`);
+}
+
+
+// 1st loop
+// counter = 1
+// 1 <= 5 -> true
+// "hello"
+// "The value of counter is 1"
+// counter = 2
+
+// 2nd loop
+// counter = 2
+// 2 <= 5 -> true
+// "hello"
+// "The value of counter is 2"
+// counter = 3
+
+// 3rd loop
+// counter = 3
+// 3 <= 5 -> true
+// "hello"
+// "The value of counter is 3"
+// counter = 4
+
+// 4th loop
+// counter = 4
+// 4 <= 5 -> true
+// "hello"
+// "The value of counter is 4"
+// counter = 5
+
+// 5th loop
+// counter = 5
+// 5 <= 5 -> true
+// "hello"
+// "The value of counter is 5"
+// counter = 6
+
+// 6th loop
+// counter = 6
+// 6 <= 5 -> false
+// - we don't enter the loop, -> we exit the loop
+// - there is no 6th loop
+
+
+let animals = ["cow", "hen"];
+
+// i < 4
+// i = 0; i < 3
+// i = 15; i <= 18
+
+for (let i = 1; i <= 3 ; i++) {
+	let userAnimal = prompt("What animal do you want to add ?");
+	animals.push(userAnimal);
+}
+
+console.log(`The animals are ${animals}`)

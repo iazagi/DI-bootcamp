@@ -1,0 +1,16 @@
+let bankAmount = 3000;
+let computerPrice = 1800;
+let howManyComputerBought = 0;
+
+console.log(`I have ${bankAmount} shekels in my account`);
+console.log(`I now have ${howManyComputerBought} computers`);
+
+// do I have enough money to buy a computer
+while (bankAmount >= computerPrice) {
+	//bankAmount = bankAmount - computerPrice
+	bankAmount -= computerPrice;
+	howManyComputerBought++;
+
+	console.log(`I have ${bankAmount} shekels in my account`);
+	console.log(`I now have ${howManyComputerBought} computers`);
+}

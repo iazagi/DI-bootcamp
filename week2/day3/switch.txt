@@ -1,0 +1,49 @@
+let userLanguage = prompt("what is your language");
+
+if (userLanguage === "French") {
+	alert("Bonjour")
+} else if (userLanguage === "English") {
+	alert("Hello")
+} else if (userLanguage === "Spanish") {
+	alert("Hola")
+} else {
+	alert("Bye")
+}
+
+// switch case : only compare stuff that are ===
+// cannot use >, <, !
+// don't forget to break
+
+switch(userLanguage) {
+  case "French":
+    alert("Bonjour")
+    break;
+  case "English":
+    alert("Hello")
+    break;
+  case "Spanish":
+    alert("Hola")
+    break;
+  default:
+    alert("Bye")
+}
+12:55
+break and continue
+script.js
+// break : exit the loop when we reach the number 10
+for (let i = 1; i <= 15; i++){
+	if (i === 10) {
+		break;
+	}
+	console.log(i);
+}
+
+// continue : skip the number 10
+for (let i = 1; i <= 15; i++){
+	
+	if (i === 10) {
+		continue;
+	}
+
+	console.log(i);
+}

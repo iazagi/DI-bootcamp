@@ -1,0 +1,36 @@
+*{
+    font-family: 'PT Sans', sans-serif;
+}
+
+body{
+	padding: 50px
+	background-color: #EFFFFD;
+	display: inline-block;
+	position: center;
+	text-align: center;
+	justify-content: center;
+}
+.continer{
+	width: 400px;
+	height: 300px;
+	display: inline-block;
+	position: center;
+	border: 2px solid black;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	background-color: #398AB9;
+}
+
+.button {
+   font-family:'Brush Script MT';
+   font-size:20px;
+   line-height:20px;
+   color:#ffffff;
+    border-width:2px;
+    border-color:#507a6e;
+    border-style:solid;
+   border-radius:20px;
+   background-color:#28d6b0;
+   padding:20px;
+}

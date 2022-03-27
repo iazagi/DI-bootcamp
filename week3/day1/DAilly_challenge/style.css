@@ -1,0 +1,20 @@
+class planetStruct {
+    constructor (
+        name,
+        moons
+    ) {
+        this.name = name;
+        this.moons = moons;
+    }
+}
+
+const planets = [
+    new planetStruct ("Mercury", []),
+    new planetStruct ("Venus", []),
+    new planetStruct ("Earth", ["Moon"]),
+    new planetStruct ("Mars", ["Deimos","Phobos"]),
+    new planetStruct ("Jupiter", ["Io", "Europa", "Ganymede", "and at least 76 others..."]),
+    new planetStruct ("Saturn", ["Enceladus", "Titan", "and some 80 others..."]),
+    new planetStruct ("Uranus", ["Oberon", "Titania", "Juliet", "Puck", "Cordelia", "Ophelia", "Bianca", "Desdemona", "Portia", "Rosalind", "Cressida", "Belinda", "and others..."]),
+    
+];

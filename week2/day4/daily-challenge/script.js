@@ -27,7 +27,7 @@ function printWord(word, maxLength) {
     console.log(`* ${word}${" ".repeat(addSpace)} *`);
 
 }
-
+//for(let i=1; i<7;i++){    console.log("*".repeat(i))}
 
 console.log("*".repeat(bigWord+4));
 

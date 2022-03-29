@@ -1,0 +1,11 @@
+.banner{
+	background-color: lightgray;
+	font-size: 20px;
+	padding: 20px;
+	display : none;
+}
+.banner-show{
+	background-color: lightgray;
+	font-size: 20px;
+	padding: 20px;
+}

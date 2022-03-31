@@ -1,0 +1,37 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	height: 100vh;
+	background linear-gradient(left, #8052ec ,#d161ff)
+}
+#container{
+	width: 40%;
+	min-width: 450px;
+	position: absolute;
+	transform(-50%,-50%);
+	top: 50%;
+	left: 50%;
+}
+#newtask{
+	position: relative;
+	background-color: #fff;
+	padding 30px 20px;
+	border-radius: 5px;
+	box-shadow: 0 15px 30px rgba(0, 0, 0, 3);
+}
+#newtask input{
+	width: 70%;
+	height: 45px;
+	font-family: `poppins`, sans-serif;
+	font-size: 15px;
+	border: 2px solid #d1d3b4;
+	padding: 12px;
+	color : #111111;
+	font-weight: 500;
+	position: relative;
+	border-radius: 5px;
+}
+#newtask input:f

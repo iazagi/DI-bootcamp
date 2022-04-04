@@ -85,7 +85,7 @@ colors .forEach((color , index) => console.log(`${index + 1}# choice: ${colors[i
 console.log(colors.included("violet") ? "yeah" : "no...");
 
 
-*/
+
 //Exercise 5 : Colors #2
 
 //Write a JavaScript program that displays the colors in the following order : “1st choice is Blue .” “2nd choice is Green.
@@ -115,3 +115,18 @@ let cashFlow =  ["+200", "-100", "+146", "+167", "-2900"];
 cashFlow.forEach((cashFlow) => bankAmount += Number(cashFlow) + Number(cashFlow) * tax);
 //Display your current bankAccount standing at the end of the month.
 console.log(bankAmount);
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+

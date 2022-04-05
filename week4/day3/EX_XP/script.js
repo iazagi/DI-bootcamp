@@ -1,61 +1,64 @@
-// EX-1 find sum
+/*//Analyze these pieces of code before executing them. What will be the outputs ?
+//-------------1----------
+const fruits = ["apple", "orange"];
+const vegetables = ["carrot", "potato"];
 
-//let sumOf = (first , second)=> first + second ;
-//console.log(sumOf(8,8));
+const result = ['bread', ...vegetables, 'chicken', ...fruits];
+console.log(result);
+//['bread',"apple", "orange", 'chicken',"carrot", "potato"]
+//------2------
+const country = "USA";
+console.log([...country]);
+// U
+// S
+// A
+//------Bonus------
+let newArray = [...[,,]];
+console.log(newArray);
+//undifind*/
 
-// EX-2 kg and grams
-
-//let weightGr = function (w){return w * 1000 }
-//console.log(weightGr(5));
- //EX 2
-
-//declaration function as to be named fuction expression can be ananumes ;
-
-// uuse line arrow function4
-// EX-2
-let weightGr = (w) => w*1000;
-console.log(weightGr(8));
-
-//EX 3
-//Create a self invoking function that takes 4 arguments: number of children, partner’s name, geographic location, job title.
-//The function should display in the DOM a sentence like "You will be a <job title> in <geographic location>, and married to 
-//<partner's name> with <number of children> kids."
-
-//(function(numChildren , partnerName, geoLoction, jobTitle){
-//	let sentence = document.createElement("p");
-//	sentence.innerText = ` you will be a ${jobTitle} in ${geoLoction}, and married to ${partnerName} with ${numChildren} kids.`;
-//	document.body.appendChild(sentence);
-//})(3, "vered", "tel-aviv", "programer")
+//////////////////Exercise 2 : Employees
 
 
-////  EX-4
+let users = [{ firstName: 'Bradley', lastName: 'Bouley', role: 'Full Stack Resident' },
+             { firstName: 'Chloe', lastName: 'Alnaji', role: 'Full Stack Resident' },
+             { firstName: 'Jonathan', lastName: 'Baughn', role: 'Enterprise Instructor' },
+             { firstName: 'Michael', lastName: 'Herman', role: 'Lead Instructor' },
+             { firstName: 'Robert', lastName: 'Hajek', role: 'Full Stack Resident' },
+             { firstName: 'Wes', lastName: 'Reid', role: 'Instructor'},
+             { firstName: 'Zach', lastName: 'Klabunde', role: 'Instructor'}];
+//Using the map() method, say hello to the users using only their firstname (ie. “Hello Bradley”, “Hello Chloe” ect…)
+let uesrsFirstName = users.map((element) => console.log(`hello  ${element["firstName"]}`));
 
-/*
-(function(userName, image){
-	let div = document.createElement("div");
-	let myUser = document.createTextNode(userName);
-	let userImg = document.createElement("img");
-	userImg.src = image; 
-	div.appendChild(myUser);
-	div.appendChild(userImg);
-	let navnav = document.getElementsByClassName("navbar")[0];
-	navnav.appendChild(div);
+//Using the filter() method, create a new array, containing only the Full Stack Residents.
+let onlyFullstack = users.filter((element) => element["role"] === 'Full Stack Resident' );
+console.log(onlyFullstack);
 
-})("israel",mario.png )
-//// does not work ??
-*/
-/// EX - 5 juice bar
+//Bonus : Chain the filter method with a map method, to congratulate the Full Stack Residents (ie. “Good job Bradley”, “Good Job Chloe” ect…)
+let goodJob = users
+					.filter((element) => element["role"] === 'Full Stack Resident' )
+					.map((element) => console.log(`good job  ${element["firstName"]}`))
+/////////////////// Exercise 3 : Star Wars
 
-function makeJuice(sizeBev){
+let epic = ['a', 'long', 'time', 'ago', 'in a', 'galaxy', 'far far', 'away'];
+///Use the reduce() method to combine all of these into a single string.
+let sentence = epic.reduce((acc, element) => acc + ' ' + element);
+console.log(sentence);
 
-	let sizeBevrege = sizeBev;
+/////////////Exercise 4 : Employees #2
 
-	function addIngredients(fing, sing, ting){
-		let sentence = document.createElement("p");
-		sentence.innerText = `The client wants a ${sizeBevrege} juice, containing ${"fing"}, ${"sing"}, ${"ting"}". `:
-		document.body.appendChild(sentence);
-	}
+let student = [{name: "Ray", course: "Computer Science", isPassed: true}, 
+               {name: "Liam", course: "Computer Science", isPassed: false}, 
+               {name: "Jenner", course: "Information Technology", isPassed: true}, 
+               {name: "Marco", course: "Robotics", isPassed: true}, 
+               {name: "Kimberly", course: "Artificial Intelligence", isPassed: false}, 
+               {name: "Jamie", course: "Big Data", isPassed: false}];
 
 
-}
-makeJuice("banana","apple","pear");
+let newArray = student.filter((element)=>element["isPassed"]==true);
+
+
+
+let newArray2 = student
+						.filter((element)=>element["isPassed"]==true)
+						.map((element)=>console.log(`Good Job ${element["name"]} you passed the course in ${element["course"]}`));

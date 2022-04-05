@@ -45,17 +45,17 @@ console.log(weightGr(8));
 //// does not work ??
 */
 /// EX - 5 juice bar
-
+let userIngredients = prompt("what Ingredients do you want?");///milk , banana, apple
+let userIngredientsArray = userIngredients.split(", ");//["milk", "banana", "apple"]
 function makeJuice(sizeBev){
-
-	let sizeBevrege = sizeBev;
 
 	function addIngredients(fing, sing, ting){
 		let sentence = document.createElement("p");
-		sentence.innerText = `The client wants a ${sizeBevrege} juice, containing ${"fing"}, ${"sing"}, ${"ting"}". `:
+		let text =document.createTextNode(`The client wants a ${sizeBev} juice, containing ${"fing"}, ${"sing"}, ${"ting"}". `);
+		sentence.appendChild(text);
 		document.body.appendChild(sentence);
 	}
-
+	addIngredients(... userIngredientsArray);///max 3 items from array
 
 }
-makeJuice("banana","apple","pear");
+makeJuice("large");

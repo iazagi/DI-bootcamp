@@ -1,0 +1,86 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-image: url(pattern.png);
+    background-color: #ED0FB6;
+
+}
+
+nav{
+	display: inline-flex;
+    align-items: center;
+    padding-left: 2%;
+    background-color: #0DE335;
+    width: 100%;
+    height: 15vh;
+
+}
+#search{
+	height: 8vh;
+    width: 50vw;
+    margin-left: 2%;
+    padding-bottom:2% ;
+    border-radius: 20px;
+    font-size: 1.7em;
+    padding-top: 2vh;
+}
+
+h1{
+	font-family: 'SEGA LOGO FONT', sans-serif; 
+	font-size: 50px;
+
+}
+.searchDiv{
+	position: relative;
+	justify-self: content;
+	align-self: center;
+	
+
+}
+.container {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content:center;
+   
+}
+.card{
+	margin: 10px;
+	padding: 15px;
+	background-color: #0F6113;
+
+}
+.hide {
+    display: none;
+}
+h3 {
+    font-size: 1.7em;
+    font-weight: bold;
+    color: rgb(66, 66, 66);
+    margin-bottom: 10px;
+}
+
+.card {
+    margin: 10px;
+    padding: 20px;
+    background-color:aquamarine;
+    background-image: url('card-pattern.png');
+    border-radius: 15px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card > img {
+    background-color: rgb(73, 73, 73);
+    border-radius:50%;
+}
+
+.card > div {
+    font-size: 1.2em;
+    color: rgb(66, 66, 66);
+}

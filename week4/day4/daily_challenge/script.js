@@ -22,7 +22,6 @@ class Video{
     }
 }
 
-
 //Instantiate a new Video instance and call the watch() method.
 
 let video1 = new Video("big in japan", "alphaville", 450 );

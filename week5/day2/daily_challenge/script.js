@@ -33,8 +33,8 @@ function makeRequest(query) {
 	}
 }
 
-
-document.getElementsByClassName("submit").addEventListener(`click`, (element) => {
+let onSub = document.getElementsByClassName("submit");
+onSub.addEventListener(`submit`, (element) => {
 	element.preventDefault();
 	let Q = document.forms[0]["input"].value;
 	makeRequest(Q);
@@ -43,5 +43,6 @@ document.getElementsByClassName("btnClean").addEventListener(`click` ,(element) 
 	let removeAll =document.querySelectorAll(".gif");
 	for(inDiv of removeAll){
 		inDiv.remove();
+
 	}
 })

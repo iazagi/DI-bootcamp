@@ -36,3 +36,94 @@ makeAllCaps(array)
   .then(words => sortWords(words))
   .then(result => console.log(result))
   .catch(error => console.log(error))
+
+////////////////////////////////////EX 2
+let morse = `{
+  "0": "-----",
+  "1": ".----",
+  "2": "..---",
+  "3": "...--",
+  "4": "....-",
+  "5": ".....",
+  "6": "-....",
+  "7": "--...",
+  "8": "---..",
+  "9": "----.",
+  "a": ".-",
+  "b": "-...",
+  "c": "-.-.",
+  "d": "-..",
+  "e": ".",
+  "f": "..-.",
+  "g": "--.",
+  "h": "....",
+  "i": "..",
+  "j": ".---",
+  "k": "-.-",
+  "l": ".-..",
+  "m": "--",
+  "n": "-.",
+  "o": "---",
+  "p": ".--.",
+  "q": "--.-",
+  "r": ".-.",
+  "s": "...",
+  "t": "-",
+  "u": "..-",
+  "v": "...-",
+  "w": ".--",
+  "x": "-..-",
+  "y": "-.--",
+  "z": "--..",
+  ".": ".-.-.-",
+  ",": "--..--",
+  "?": "..--..",
+  "!": "-.-.--",
+  "-": "-....-",
+  "/": "-..-.",
+  "@": ".--.-.",
+  "(": "-.--.",
+  ")": "-.--.-"
+}`
+
+
+const toJs = (str) => {
+  return new Promise((resolve,reject) =>{
+    if (str .length === 0){
+      reject(`this string is empty -- errror`)
+
+    }else{
+      let obj = JSON.parse(str)
+      console.log(`first function --ok--`);
+      resolve(obj)
+    }
+  })
+}
+
+const toMorse = (obj) =>{
+  return newp Promise ((resolve,reject)=>{
+    let str = prompt("enter a word");
+    let arrStr = str.split(``);
+    let returnArr=[];
+
+    for(let letter of arrStr){
+      if(letter in obj){
+        returnArr.push(obj[letter]);
+      }else{
+        reject(`one letter does not exist`);
+      }
+    }
+    console.log(`A ok!`);
+  })
+  return returnArr
+}
+
+const displayResult = (arr)=>{
+  let str = arr.join(` `);
+  document.querySelector(`.container`).textContent = str
+}
+
+let object = toJs(morse)
+  .then((value)=>toMorse(value));
+  .then((response)=>displayResult(response));
+  .catch((error)=>console.log(error + *catched*));

@@ -1,0 +1,28 @@
+body {
+  background-color: #A2B38B;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 2rem;
+  width: 80%;
+  margin: auto;
+}
+
+td {
+  text-align: center;
+  padding: 8px;
+}
+
+tr {
+  border: 3px solid black;
+}
+.complete {
+  color: #357C3C;
+}
+a{
+  font-size: 1.3em;
+}
